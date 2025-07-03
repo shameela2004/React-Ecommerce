@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Newborn Onesie",
+      "price": 299,
+      "image": "src/assets/babyprod.jpeg",
+      "category": "Clothing"
+    },
+    {
+      "id": "2",
+      "name": "Baby Bottle",
+      "price": 199,
+      "image": "src/assets/babyprod.jpeg",
+      "category": "Feeding"
+    },
+    {
+      "id": "3",
+      "name": "Baby Bottle",
+      "price": 599,
+      "image": "src/assets/babyprod.jpeg",
+      "category": "Toy"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "12f3",
+      "name": "h",
+      "email": "h@gmail.com2",
+      "password": "23"
+    },
+    {
+      "id": "b24a",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "84f8",
+      "name": "a",
+      "email": "a@gmail.com",
+      "password": "123"
+    }
+  ]
+}
