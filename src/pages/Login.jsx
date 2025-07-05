@@ -12,7 +12,7 @@ function Login() {
     const handlesubmit=async (e)=>{
         e.preventDefault()
         try{
-            const res = await axios.get(`http://localhost:5000/user?email=${form.email}&password=${form.password}`)
+            const res = await axios.get(`http://localhost:5000/users?email=${form.email}&password=${form.password}`)
             if(res.data.length>0){
                 login(res.data[0])
                 alert("Login Successfull")
@@ -27,7 +27,7 @@ function Login() {
             }
     }
   return (
-    <div className='mx-auto max-w-auto p-6 mt-10 bg-white rounded-xl shadow'>
+    <div className='max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow'>
         <h1 className='font-bold text-blue-500 text-2xl mb-4 text-center'>LOGIN</h1>
         <form onSubmit={handlesubmit}>
             <Input type='email' label="Email" placeholder='Enter the registered email' value={form.email} onChange={(e)=>setForm({...form, email: e.target.value})}></Input>

@@ -7,6 +7,7 @@ import ProductList from './components/ProductList'
 import CartPage from './pages/CartPage'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import ProtectedRoute from './components/common/ProtectedRoute'
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='*' element={<PageNotFound/>}/>
-        <Route path='cart' element={<CartPage/>}></Route>
-        <Route path='login' element={<Login/>}></Route>
-        <Route path='register' element={<Register/>}></Route>
+        <Route path='/cart' element={<ProtectedRoute><CartPage/></ProtectedRoute>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
       </Routes>
      
     </>

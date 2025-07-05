@@ -22,30 +22,36 @@
       "category": "Toy"
     }
   ],
-  "user": [
+  "users": [
     {
       "id": "1",
       "name": "abc",
       "email": "abc@gmail.com",
-      "password": "12345"
+      "password": "12345",
+      "cart": [
+        {
+          "id": "3",
+          "name": "Baby Bottle",
+          "price": 599,
+          "image": "src/assets/babyprod.jpeg",
+          "category": "Toy",
+          "quantity": 6
+        }
+      ]
     },
     {
       "id": "12f3",
       "name": "h",
       "email": "h@gmail.com2",
-      "password": "23"
-    },
-    {
-      "id": "b24a",
-      "name": "",
-      "email": "",
-      "password": ""
+      "password": "23",
+      "cart": []
     },
     {
       "id": "84f8",
       "name": "a",
       "email": "a@gmail.com",
-      "password": "123"
+      "password": "123",
+      "cart": []
     }
   ]
 }
