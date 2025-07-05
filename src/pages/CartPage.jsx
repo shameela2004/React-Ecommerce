@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from 'react';
 // import { useCart } from '../context/CartProvider';
 
@@ -132,3 +133,18 @@ function Cart() {
 
 export default Cart;
 
+=======
+import React from 'react'
+import Navbar from '../components/common/Navbar'
+
+function CartPage() {
+  return (
+    <>
+    <Navbar/>
+    <h2>Cart</h2>
+    </>
+  )
+}
+
+export default CartPage
+>>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119

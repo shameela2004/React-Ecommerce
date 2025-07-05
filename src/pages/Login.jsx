@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import Input from '../components/common/Input'
 import { useNavigate } from 'react-router-dom'
@@ -39,4 +40,47 @@ function Login() {
   )
 }
 
+=======
+import React, { useState } from 'react'
+import Input from '../components/common/Input'
+import { useNavigate } from 'react-router-dom'
+import Button from '../components/common/Button';
+import axios from 'axios';
+import { useAuth } from '../context/AuthProvider';
+
+function Login() {
+    const [form,setForm]=useState({email:"",password:""})
+    const navigate=useNavigate();
+    const {login}=useAuth();
+    const handlesubmit=async (e)=>{
+        e.preventDefault()
+        try{
+            const res = await axios.get(`http://localhost:5000/user?email=${form.email}&password=${form.password}`)
+            if(res.data.length>0){
+                login(res.data[0])
+                alert("Login Successfull")
+                navigate("/")
+            }
+            else{
+                alert("Invalid password or email")
+            }
+        }
+        catch(er){
+                console.log("login failed",er)
+            }
+    }
+  return (
+    <div className='mx-auto max-w-auto p-6 mt-10 bg-white rounded-xl shadow'>
+        <h1 className='font-bold text-blue-500 text-2xl mb-4 text-center'>LOGIN</h1>
+        <form onSubmit={handlesubmit}>
+            <Input type='email' label="Email" placeholder='Enter the registered email' value={form.email} onChange={(e)=>setForm({...form, email: e.target.value})}></Input>
+            <Input type='password' label="Password" placeholder="Enter your password" value={form.password} onChange={(e)=>setForm({...form, password: e.target.value})}></Input>
+             <Button type="submit" text="Login" className='w-full mt-4'></Button>
+        </form>
+
+    </div>
+  )
+}
+
+>>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119
 export default Login
