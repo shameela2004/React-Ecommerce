@@ -16,15 +16,13 @@
     },
     {
       "id": "3",
-      "name": "Baby Bottle",
+      "name": "Baby Toy",
       "price": 599,
       "image": "src/assets/babyprod.jpeg",
       "category": "Toy"
     }
   ],
-
- 
-  "user": [
+  "users": [
     {
       "id": "1",
       "name": "abc",
@@ -33,7 +31,7 @@
       "cart": [
         {
           "id": "3",
-          "name": "Baby Bottle",
+          "name": "Baby Toy",
           "price": 599,
           "image": "src/assets/babyprod.jpeg",
           "category": "Toy",
@@ -52,7 +50,8 @@
       "id": "b24a",
       "name": "",
       "email": "",
-      "password": ""
+      "password": "",
+      "cart": []
     },
     {
       "id": "84f8",
@@ -60,7 +59,6 @@
       "email": "a@gmail.com",
       "password": "123",
       "cart": []
-      "password": "123"
     }
   ]
 }
