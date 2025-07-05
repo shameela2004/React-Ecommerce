@@ -22,16 +22,13 @@
       "category": "Toy"
     }
   ],
-<<<<<<< HEAD
-  "users": [
-=======
+
+ 
   "user": [
->>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119
     {
       "id": "1",
       "name": "abc",
       "email": "abc@gmail.com",
-<<<<<<< HEAD
       "password": "12345",
       "cart": [
         {
@@ -43,37 +40,27 @@
           "quantity": 6
         }
       ]
-=======
-      "password": "12345"
->>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119
     },
     {
       "id": "12f3",
       "name": "h",
       "email": "h@gmail.com2",
-<<<<<<< HEAD
       "password": "23",
       "cart": []
-=======
-      "password": "23"
     },
     {
       "id": "b24a",
       "name": "",
       "email": "",
       "password": ""
->>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119
     },
     {
       "id": "84f8",
       "name": "a",
       "email": "a@gmail.com",
-<<<<<<< HEAD
       "password": "123",
       "cart": []
-=======
       "password": "123"
->>>>>>> 397bf7e0ff0d106e5d3c0f654ea24a3df1e6a119
     }
   ]
 }
